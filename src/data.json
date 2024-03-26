@@ -1,0 +1,83 @@
+{
+    "customers": [
+      {
+        "id": 1,
+        "name": "John Doe",
+        "mobile": "123456789",
+        "account_number": "123456789",
+        "balance": 5000,
+        "transactions": [
+          {
+            "date": "2024-03-21",
+            "description": "Deposit",
+            "amount": 2000
+          },
+          {
+            "date": "2024-03-20",
+            "description": "Withdrawal",
+            "amount": -1000
+          }
+        ],
+        "loans": [
+          {
+            "loan_id": "LN123",
+            "amount": 10000,
+            "interest_rate": 5,
+            "term": 12,
+            "remaining_balance": 8000,
+            "monthly_payment": 1000
+          }
+        ],
+        "fixed_deposits": [
+          {
+            "fd_id": "FD456",
+            "amount": 20000,
+            "interest_rate": 6,
+            "term": 24,
+            "maturity_amount": 24000
+          }
+        ],
+        "recurring_deposits": [
+          {
+            "rd_id": "RD789",
+            "monthly_deposit": 1000,
+            "interest_rate": 4,
+            "term": 12,
+            "maturity_amount": 13000
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Jane Smith",
+        "mobile": "123456789",
+        "account_number": "987654321",
+        "balance": 8000,
+        "transactions": [
+          {
+            "date": "2024-03-21",
+            "description": "Deposit",
+            "amount": 3000
+          },
+          {
+            "date": "2024-03-20",
+            "description": "Transfer to John Doe",
+            "amount": -2000
+          }
+        ],
+        "loans": [],
+        "fixed_deposits": [],
+        "recurring_deposits": [
+          {
+            "rd_id": "RD987",
+            "monthly_deposit": 1500,
+            "interest_rate": 4.5,
+            "term": 24,
+            "maturity_amount": 40000
+          }
+        ]
+      }
+    ]
+    
+  }
+  

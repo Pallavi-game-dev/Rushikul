@@ -1,0 +1,27 @@
+{
+    "customer_section": [
+      {
+        "heading": "Saving Acount",
+        "balance": 5000,
+        "description":"Total Available Balance"
+      },
+      {
+        "heading": "Laon Acount",
+        "balance": 650000,
+        "description":"Total Outstanding Balance"
+      },
+      {
+        "heading": "Fixed Deposite",
+        "balance": 100000,
+        "description":"Total Amount Deposited"
+      },
+      {
+        "heading": "Recurring Deposits",
+        "balance": 300000,
+        "description":"Total Amount Deposited"
+      }
+    ],
+    "home_selection":[
+        
+    ]
+  }

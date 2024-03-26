@@ -1,0 +1,36 @@
+.headerBg{
+    /* background-image: url('../../assets/haederBg.jpg'); */
+        height: 60px;
+        /* background: linear-gradient(45deg, #a0847f, #8d8c92); */
+        border-bottom: 2px solid #8d8c92;
+}
+.headerImg{
+    height: 60px;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+.header_label{
+    display: flex;
+    flex-wrap: inherit;
+    font-size: 45px;
+    color: white;
+    align-items: center;
+    /* justify-content: center; */
+    font-family: cursive;
+    width: 100%;
+    line-height: 20px;
+    background: #055160;
+}
+.header_logo{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+}
+.header_logo_img{
+    width: 60px;
+    height: 60px;
+    position: relative;
+}

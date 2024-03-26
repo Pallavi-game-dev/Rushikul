@@ -1,0 +1,15 @@
+.btn-secondary-outline{
+    background: transparent;
+    border: 1px solid #055160;
+}
+.btn-secondary{
+    background: #055160;
+    border: none;
+}
+.header{
+    background: #055160;
+    color: white;
+}
+thead{
+    background: #05516026;
+}
