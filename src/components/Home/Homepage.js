@@ -1,98 +1,39 @@
-import React, { useState } from 'react';
-import AddCustomer from '../Customer/AddCustomer';
-import { Card } from '@mui/material';
-// import { DataGrid } from '@mui/x-data-grid';
-const dataJson = require('../../data.json')
-function Homepage() {
-    const data = dataJson.customers;
-    const  [openDai,setOpenDai] = useState(false);
+import React from 'react';
 
-    const openDailogAddCustomer = (arg) => {
-      setOpenDai(arg);
-  }
-  const columns = [
-    { field: 'id', headerName: 'Sr.no', width: 70 },
-    {
-      field: 'name',
-      headerName: 'Full name',
-      description: 'This column has a value getter and is not sortable.',
-      sortable: false,
-      width: 160,
-      valueGetter: (value, row) => `${row.firstName || ''} ${row.lastName || ''}`,
-    },
-    {
-      field: 'mobile',
-      headerName: 'Mobile',
-      type: 'number',
-      width: 10,
-    },
-    {
-      field: 'account_number',
-      headerName: 'Account Number',
-      type: 'number',
-      width: 10,
-    },
-   
-    {
-      field: 'balance',
-      headerName: 'Balance',
-      type: 'number',
-      width: 10,
-    },
-   
-  ];
- 
+function Homepage() {
   return (
     <>
-    <div className='container my-3'>
-      <div className='text-end'>
-        <div className='col-12'>
-            <button className='btn btn-secondary' onClick={() => openDailogAddCustomer(true)}>+ Add customer</button>
-        </div>
-        <div className=' my-4'>
-          <Card>
-          {/* <DataGrid
-            rows={data}
-            columns={columns}
-            initialState={{
-              pagination: {
-                paginationModel: { page: 0, pageSize: 5 },
-              },
-            }}
-            pageSizeOptions={[5, 10]}
-            checkboxSelection
-          /> */}
-          {/* <table className='table fs-6'>
-            <thead>
-                <tr>
-                <th scope="col">Sr.no</th>
-                <th scope="col">Name</th>
-                <th scope="col">Mobile Number</th>
-                <th scope="col">Account Number</th>
-                <th scope="col">Balance</th>
-                </tr>
-            </thead>
-            <tbody>
-                {data.map((ele)=>{
-                 return   <tr key={ele.id}>
-                        <th scope="row">{ele.id}</th>
-                        <td >{ele.name}</td>
-                        <td>{ele.mobile}</td>
-                        <td>{ele.account_number}</td>
-                        <td>{ele.balance}</td>
-                  </tr>
-                })}
-                
-            </tbody>
-            </table> */}
-          </Card>
-          
-
-        </div>
-      </div>
-    </div>    
-    <AddCustomer open={openDai} closenDailog={openDailogAddCustomer}/>    
-    </>
+    <nav className="navbar navbar-expand-lg navbar-light bg-light">
+  <div className="container-fluid">
+    <a className="navbar-brand" href="/">Navbar</a>
+    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span className="navbar-toggler-icon"></span>
+    </button>
+    <div className="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+        <li className="nav-item">
+          <a className="nav-link active" aria-current="page" href="/">Home</a>
+        </li>
+        <li className="nav-item">
+          <a className="nav-link" href="/">Link</a>
+        </li>
+        <li className="nav-item dropdown">
+          <a className="nav-link dropdown-toggle" href="/" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a>
+          <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a className="dropdown-item" href="/">Action</a></li>
+            <li><a className="dropdown-item" href="/">Another action</a></li>
+            <li><hr className="dropdown-divider"/></li>
+            <li><a className="dropdown-item" href="/">Something else here</a></li>
+          </ul>
+        </li>
+       
+      </ul>
+    </div>
+  </div>
+</nav>
+   </>
     
   )
   
