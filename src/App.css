@@ -13,3 +13,19 @@
 thead{
     background: #05516026;
 }
+section{
+    padding: 70px 0;
+}
+.heading {
+    font-size: 38px;
+}
+.fontWeight700 {
+    font-weight: 700;
+}
+.text-center {
+    text-align: center !important;
+}
+.addBoxshadow{
+    box-shadow: 5px 6px 5px #7e9e831c;
+    
+}

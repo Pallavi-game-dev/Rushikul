@@ -9,7 +9,6 @@ a{
 }
 .header_logo_name{
     font-size: 30px;
-    font-family: cursive;
     width: 250px;
     margin-left: 10px;
     transition: all 0.3s ease-in-out;
@@ -17,8 +16,8 @@ a{
 .inlineHeader   {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    background-color: #7e9e831c;
+    align-items: flex-end;
+   
 }
 .leftLogo{
     width: 380px;
@@ -27,7 +26,4 @@ a{
     transition: all 0.3s ease-in-out;
     margin-bottom: 5px;
     margin-left: 32px;
-}
-.rightNavBar{
-    
 }

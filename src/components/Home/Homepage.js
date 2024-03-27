@@ -1,39 +1,80 @@
 import React from 'react';
-
+import './Homepage.css'
 function Homepage() {
+  const carouselItems = [
+    {
+      imageUrl: require('../../assets/term-deposit.jpg'),
+      title: 'Term Deposit',
+      description: ''
+    },
+    {
+      imageUrl: require('../../assets/personal-loan.jpg'),
+      title: 'Personal Loan',
+      description: ''
+    },
+    {
+      imageUrl: require('../../assets/saving.jpg'),
+      title: 'Saving',
+      description: ''
+    },
+    {
+      imageUrl: require('../../assets/elocaker.jpg'),
+      title: 'E Locker',
+      description: ''
+    },
+
+    // Add more objects for additional cards
+  ];
+  // Function to chunk array into groups of three
+  const chunkArray = (arr, size) => {
+    return arr.reduce((acc, _, i) => {
+      if (i % size === 0) {
+        acc.push(arr.slice(i, i + size));
+      }
+      return acc;
+    }, []);
+  };
+
+  // Group carousel items into sets of three
+  const groupedItems = chunkArray(carouselItems, 4);
+
   return (
     <>
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
-  <div className="container-fluid">
-    <a className="navbar-brand" href="/">Navbar</a>
-    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span className="navbar-toggler-icon"></span>
-    </button>
-    <div className="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-        <li className="nav-item">
-          <a className="nav-link active" aria-current="page" href="/">Home</a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link" href="/">Link</a>
-        </li>
-        <li className="nav-item dropdown">
-          <a className="nav-link dropdown-toggle" href="/" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </a>
-          <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a className="dropdown-item" href="/">Action</a></li>
-            <li><a className="dropdown-item" href="/">Another action</a></li>
-            <li><hr className="dropdown-divider"/></li>
-            <li><a className="dropdown-item" href="/">Something else here</a></li>
-          </ul>
-        </li>
-       
-      </ul>
-    </div>
-  </div>
-</nav>
-   </>
+    <section>
+    <h4 class="text-center heading fontWeight700">Our Services</h4>
+      <div id="carouselExampleControls" className="carousel slide mt-4" data-ride="carousel">
+        <div className="carousel-inner">
+          {console.log(groupedItems)}
+          {groupedItems.map((group, index) => (
+            <div key={index} className={`carousel-item ${index === 0 ? 'active' : ''}`}>
+              <div className="row">
+                {group.map((item, idx) => (
+                  <div key={idx} className="col-md-3 mb-3">
+                    <div className="card card-design">
+                      <img className="img-fluid" alt="100%x280" src={item.imageUrl} />
+                      <div className="card-body">
+                        <h4 className="card-title">{item.title}</h4>
+                        <p className="card-text">{item.description}</p>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+        <a className="carousel-control-prev" href="#carouselExampleControls" role="button" data-bs-slide="prev">
+          <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span className="sr-only">Previous</span>
+        </a>
+        <a className="carousel-control-next" href="#carouselExampleControls" role="button" data-bs-slide="next">
+          <span className="carousel-control-next-icon" aria-hidden="true"></span>
+          <span className="sr-only">Next</span>
+        </a>
+      </div>
+    </section>
+   
+  </>
     
   )
   
