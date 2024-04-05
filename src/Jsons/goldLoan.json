@@ -1,0 +1,26 @@
+{
+    "en":
+        {
+            "Heading":"Gold Loan",
+            "subline":"Avail Gold loan at a truly unparalleled rate of interest to overcome financial exigenies.",
+            "steps":[
+            {
+                "label":"Hassle free documentation",
+                "icon":"deal.png"
+            },
+            {
+                "label":"Speedy sanction & Disbursal of loans",
+                "icon":"loan.png"
+            },
+            {
+                "label":"Safety of Gold ornaments",
+                "icon":"safe-box.png"
+            },
+            {
+                "label":"Zero prepayment charges",
+                "icon":"prepayment.png"
+            }
+            ]
+        }
+    
+}

@@ -1,4 +1,9 @@
 {
+  "main":[
+    {
+     "name":"Rushikul"
+    }
+  ],
     "customers": [
       {
         "id": 1,

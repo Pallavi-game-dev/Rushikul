@@ -1,6 +1,6 @@
 import React from "react";
 import './Customer.css';
-const cardJson = require('../../cardJson.json');
+const cardJson = require('../../Jsons/cardJson.json');
 function Customer() {
     const cardList = cardJson.customer_section;
   return (

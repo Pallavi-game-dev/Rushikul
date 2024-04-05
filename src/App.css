@@ -14,7 +14,7 @@ thead{
     background: #05516026;
 }
 section{
-    padding: 70px 0;
+    padding: 70px 70px;
 }
 .heading {
     font-size: 38px;
@@ -28,4 +28,19 @@ section{
 .addBoxshadow{
     box-shadow: 5px 6px 5px #7e9e831c;
     
+}
+.small_heading{
+    font-size: 21px;
+}
+.bgLightGrey{
+    background: #f9f9f9;
+}
+.sticky{
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    background: #fff;
+    border-bottom: 1px solid #e0e0e0;
+    z-index: 999;
 }

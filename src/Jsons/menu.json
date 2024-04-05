@@ -1,0 +1,58 @@
+{
+    "name":"Rushikul",
+    "menu":[
+        {
+            "menu": "Home",
+            "submenu": []
+        },
+        {
+            "menu": "About Us",
+            "submenu": [
+                "Chairman Message",
+                "Board of Director",
+                "Our Vision",
+                "Our Value",
+                "Financial Position",
+                "Our Team"
+            ]
+        },
+        {
+            "menu": "Deposits",
+            "submenu": [
+                "Rushikul Sanjivani Deposit",
+                "Savings",
+                "Daily Deposit",
+                "Twice as much Deposit",
+                "Rushikul Didpat Deposit",     
+                "Fixed deposit",
+                "Recurring Deposit",
+                "Rushikul Recurring Deposit",
+                "Millionaire Deposit",
+                "Monthly Receipts Deposit",
+                "Child Development Deposit"
+            ]
+        },
+        {
+            "menu": "Loans",
+            "submenu": [
+                "Personal Loan",
+                "Business Loan",
+                "Rushikul emergency Loan",
+                "Small-Industry Loan (for Ladies only)",
+                "emergency Loan",
+                "Gold Loan",
+                "Home Loan",
+                "Property Against Loan",
+                "FD Loan"
+            ]
+        },
+        {
+            "menu": "Contact",
+            "submenu": [
+                "Head Office",
+                "Branches"
+            ]
+        }
+    ]
+    
+}

@@ -1,0 +1,24 @@
+{
+    "en": [
+        {
+            "imageUrl": "rushikul_deposit.jpeg",
+            "title": "Rushikul Sanjivani Deposit"
+
+        },
+        {
+            "imageUrl": "rushikul_loan.jpg",
+            "title": "Rushikul Emergency Loan"
+
+        },
+        {
+            "imageUrl": "rushikul_didpat.jpg",
+            "title": "Rushikul Didpat Deposit"
+
+        },
+        {
+            "imageUrl": "rushikul_recurring.jpg",
+            "title": "Rushikul Recurring Deposit"
+
+        }
+    ]
+}

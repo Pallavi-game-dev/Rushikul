@@ -9,3 +9,31 @@
     padding: 30px 20px;
     filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.08));
 }
+.imgHeight{
+    height: 200px;
+}
+/* LOAN SECTION */
+.loanItem{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.loanItem h4{
+    margin-top: 20px;
+    text-align:center
+}
+.iconLoan{
+    width: 90px;
+    height: 90px;
+    line-height: 90px;
+    border: 1px solid var(--dark-blue-color);
+    position: relative;
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+    z-index: 1;
+    margin: 0 auto;
+}
