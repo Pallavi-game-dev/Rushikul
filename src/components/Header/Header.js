@@ -38,7 +38,7 @@ function Header() {
                             {
                               element.submenu.map(submenu => {
                                 return(
-                                <li key={submenu} style={{borderBottom:'1px solid #80808026',margin:'7px 5px'}}><a className="dropdown-item" href="/">{submenu}</a></li>
+                                <li key={submenu.name} style={{borderBottom:'1px solid #80808026',margin:'7px 5px'}}><a className="dropdown-item" href={submenu.url}>{submenu.name}</a></li>
                                 
                                 )
                               })

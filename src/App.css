@@ -18,6 +18,9 @@ section{
 }
 .heading {
     font-size: 38px;
+    text-align: center;
+    font-weight: bolder;
+   
 }
 .fontWeight700 {
     font-weight: 700;
@@ -43,4 +46,9 @@ section{
     background: #fff;
     border-bottom: 1px solid #e0e0e0;
     z-index: 999;
+}
+.containers{
+    margin: 30px;
+    background-color: #f8f9fa;
+    padding: 20px;
 }

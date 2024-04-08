@@ -1,6 +1,6 @@
 {
-    "name":"Rushikul",
-    "menu":[
+    "name": "Rushikul",
+    "menu": [
         {
             "menu": "Home",
             "submenu": []
@@ -8,51 +8,50 @@
         {
             "menu": "About Us",
             "submenu": [
-                "Chairman Message",
-                "Board of Director",
-                "Our Vision",
-                "Our Value",
-                "Financial Position",
-                "Our Team"
+                {"name": "Chairman Message", "url": "/chairman-message"},
+                {"name": "Board of Director", "url": "/board-of-director"},
+                {"name": "Our Vision", "url": "/our-vision"},
+                {"name": "Our Value", "url": "/our-value"},
+                {"name": "Financial Position", "url": "/financial-position"},
+                {"name": "Our Team", "url": "/our-team"}
             ]
         },
         {
             "menu": "Deposits",
             "submenu": [
-                "Rushikul Sanjivani Deposit",
-                "Savings",
-                "Daily Deposit",
-                "Twice as much Deposit",
-                "Rushikul Didpat Deposit",     
-                "Fixed deposit",
-                "Recurring Deposit",
-                "Rushikul Recurring Deposit",
-                "Millionaire Deposit",
-                "Monthly Receipts Deposit",
-                "Child Development Deposit"
+                {"name": "Rushikul Sanjivani Deposit", "url": "/rushikul-sanjivani-deposit"},
+                {"name": "Savings", "url": "/savings"},
+                {"name": "Daily Deposit", "url": "/daily-deposit"},
+                {"name": "Twice as much Deposit", "url": "/twice-as-much-deposit"},
+                {"name": "Rushikul Didpat Deposit", "url": "/rushikul-didpat-deposit"},     
+                {"name": "Term deposit", "url": "/term-deposit"},
+                {"name": "Recurring Deposit", "url": "/recurring-deposit"},
+                {"name": "Rushikul Recurring Deposit", "url": "/rushikul-recurring-deposit"},
+                {"name": "Millionaire Deposit", "url": "/millionaire-deposit"},
+                {"name": "Monthly Receipts Deposit", "url": "/monthly-receipts-deposit"},
+                {"name": "Child Development Deposit", "url": "/child-development-deposit"}
             ]
         },
         {
             "menu": "Loans",
             "submenu": [
-                "Personal Loan",
-                "Business Loan",
-                "Rushikul emergency Loan",
-                "Small-Industry Loan (for Ladies only)",
-                "emergency Loan",
-                "Gold Loan",
-                "Home Loan",
-                "Property Against Loan",
-                "FD Loan"
+                {"name": "Personal Loan", "url": "/personal-loan"},
+                {"name": "Business Loan", "url": "/business-loan"},
+                {"name": "Rushikul Emergency Loan", "url": "/rushikul-emergency-loan"},
+                {"name": "Small-Industry Loan (for Ladies only)", "url": "/small-industry-loan"},
+                {"name": "Emergency Loan", "url": "/emergency-loan"},
+                {"name": "Gold Loan", "url": "/gold-loan"},
+                {"name": "Home Loan", "url": "/home-loan"},
+                {"name": "Property Against Loan", "url": "/property-against-loan"},
+                {"name": "FD Loan", "url": "/fd-loan"}
             ]
         },
         {
             "menu": "Contact",
             "submenu": [
-                "Head Office",
-                "Branches"
+                {"name": "Head Office", "url": "/head-office"},
+                {"name": "Branches", "url": "/branches"}
             ]
         }
     ]
-    
 }

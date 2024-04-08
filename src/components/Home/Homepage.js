@@ -20,7 +20,7 @@ function Homepage() {
   return (
     <>
       <section>
-        <h4 className="text-center heading fontWeight700">Our Services</h4>
+        <h4 className="heading">Our Services</h4>
         <div
           id="carouselExampleControls"
           className="carousel slide mt-4"
@@ -39,7 +39,7 @@ function Homepage() {
                         <img
                           className="img-fluid imgHeight"
                           alt="100%x280"
-                          src={require('../../assets/rushikul_special/'+item.imageUrl)}
+                          src={require("../../assets/rushikul_special/"+item.imageUrl)}
                         />
                         <div className="card-body">
                           <h4 className="card-title">{item.title}</h4>
@@ -79,7 +79,7 @@ function Homepage() {
         </div>
       </section>
       <section>
-        <h4 className="text-center heading fontWeight700">Our Services</h4>
+        <h4 className="heading">Our Services</h4>
         <div
           id="carouselExampleControls"
           className="carousel slide mt-4"
@@ -98,7 +98,7 @@ function Homepage() {
                         <img
                           className="img-fluid imgHeight"
                           alt="100%x280"
-                          src={require('../../assets/rushikul_special/'+item.imageUrl)}
+                          src={require("../../assets/rushikul_special/"+item.imageUrl)}
                         />
                         <div className="card-body">
                           <h4 className="card-title">{item.title}</h4>
@@ -140,7 +140,7 @@ function Homepage() {
       <section className="bgLightGrey">
         <div className="containerFull">
           <div className="sectionHeader">
-            <h4 className="heading fontWeight700 text-center">{goldLoanJson.en.Heading}</h4>
+            <h4 className="heading">{goldLoanJson.en.Heading}</h4>
             <div className="text-center mt-2">
               <p>
               {goldLoanJson.subline}

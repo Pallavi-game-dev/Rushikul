@@ -5,6 +5,7 @@ import Home from './components/Home/Home'
 import { BrowserRouter as Router, Route,Routes } from 'react-router-dom';
 import Customer from './components/Customer/Customer';
 import Header from './components/Header/Header';
+import TermDeposit from './components/Deposits/Term-deposit';
 // import AddCustomer from './components/Customer/AddCustomer';
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/home" element={<Home />} />
         <Route path="/customer" element={<Customer />} />
+        <Route path="/term-deposit" element={<TermDeposit />} />
         <Route path="/" element={<Home />} />
       </Routes>
     </div>
