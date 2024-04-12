@@ -1,0 +1,10 @@
+.Heading_of_service{
+    position: absolute;
+    font-size: 6vw;
+    bottom: 0;
+    font-family: cursive;
+    left: 50%;
+    transform: translate(-50%, 0);
+    color: #37660f;
+    width: max-content;
+}
