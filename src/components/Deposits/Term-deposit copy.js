@@ -1,30 +1,32 @@
 import React from "react";
 
-import "./Term-deposit.css";
+import './Term-deposit.css'
 function TermDeposit() {
-  // const [value, setValue] = React.useState('one');
+    // const [value, setValue] = React.useState('one');
 
-  //   const handleChange = (event, newValue) => {
-  //     setValue(newValue);
-  //   };
+//   const handleChange = (event, newValue) => {
+//     setValue(newValue);
+//   };
 
-  return (
-    <>
-      <section className="simaple-shaodow">
-        <h4 className="heading">Term Deposit</h4>
-      </section>
-      <section>
-        <h5>
-          Terms deposits are an extremely safe investment and are therefore very
-          appealing to conservative, low-risk investors. In Monthly Income
-          Scheme Deposit, we all require certain amount for our day to day
-          expenses and for that by investing certain lump sum amount for
-          specific period of time.
-        </h5>
-      </section>
-      <section>
+    return(
+        <>
+            <section>
+                <div id="carouselExampleSlidesOnly" className="carousel slide" data-ride="carousel">
+                    <div className="carousel-inner">
+                        <div className="carousel-item active">
+                        <img className="d-block w-100" style={{height:'127px'}} src={require('../../assets/term-deposit6.jpg')} alt="First slide"/>
+                        </div>
+                        <div className="Heading_of_service">Term Deposit</div>
+
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h5>Terms deposits are an extremely safe investment and are therefore very appealing to conservative, low-risk investors. In Monthly Income Scheme Deposit, we all require certain amount for our day to day expenses and for that by investing certain lump sum amount for specific period of time.</h5>
+            </section>
+            <section className="details-card">
                 <ul className="nav nav nav-tabs  nav-fill details-card-navbar" id="myTab" role="tablist">
-                    <li className="nav-item" role="presentation" >
+                    <li className="nav-item" role="presentation">
                         <button className="nav-link active" id="information-tab" data-bs-toggle="tab" data-bs-target="#information" type="button" role="tab" aria-controls="information" aria-selected="true">Information</button>
                     </li>
                     <li className="nav-item" role="presentation">
@@ -33,31 +35,21 @@ function TermDeposit() {
                     <li className="nav-item" role="presentation">
                         <button className="nav-link" id="documents-tab" data-bs-toggle="tab" data-bs-target="#documents" type="button" role="tab" aria-controls="documents" aria-selected="false">Documents </button>
                     </li>
-                    {/* <li className="nav-item" role="presentation">
+                    <li className="nav-item" role="presentation">
                         <button className="nav-link" id="calculator-tab" data-bs-toggle="tab" data-bs-target="#calculator" type="button" role="tab" aria-controls="calculator" aria-selected="false">Calculator</button>
-                    </li> */}
+                    </li>
                 </ul>
                 <div className="tab-content tab-deatils" id="myTabContent">
                 <div className="tab-pane fade show active"  id="information" role="tabpanel" aria-labelledby="information-tab">
-                    <div className="tab-details flexDisplay">
-                        <div>
-                        <img  src={require("../../assets/information.jpg")} alt=""/>
-                        </div>
-                        <div>
-                            <h3 style={{marginBottom:'30px'}}>Depositing amount for fixed period</h3>
-                            <ul style={{listStyleType:'circle'}}>
-                                <li style={{marginBottom:'20px'}}><h5>Period of deposit is minimum 1 Month to 36 Months</h5>  </li>
-                                <li><h5>Repayment with interest on maturity date</h5></li>
-                            </ul>
-                        </div>
-                    </div>
-                   
-
-                   
+                    <h3>Depositing amount for fixed period</h3>
+                    <ul>
+                      <h5>Period of deposit is minimum 1 Month to 36 Months</h5>  
+                        <h5>Repayment with interest on maturity date</h5>
+                    </ul>
                   
                 </div>
                 <div className="tab-pane fade" id="inerestrate" role="tabpanel" aria-labelledby="inerestrate-tab">
-                <table className="interest-rate-table">
+                <table>
                     <thead>
                         <tr>
                         <th>Days/month</th>
@@ -110,18 +102,12 @@ function TermDeposit() {
                     </tbody>
                     </table>
                 </div>
-                <div className="tab-pane fade" id="documents" role="tabpanel" aria-labelledby="documents-tab">
-                <ul>
-                    <li style={{marginBottom:'20px'}}><h5>Photograph</h5></li>
-                    <li style={{marginBottom:'20px'}}><h5>Pan card</h5></li>
-                    <li style={{marginBottom:'20px'}}><h5>Aadhar Card</h5></li>
-                </ul>
+                <div className="tab-pane fade" id="documents" role="tabpanel" aria-labelledby="documents-tab">...</div>
+                <div className="tab-pane fade" id="calculator" role="tabpanel" aria-labelledby="calculator-tab">...</div>
                 </div>
-                {/* <div className="tab-pane fade" id="calculator" role="tabpanel" aria-labelledby="calculator-tab">...</div>
-                */}
-                </div> 
             </section>
-    </>
-  );
+     
+        </>
+    )
 }
 export default TermDeposit;

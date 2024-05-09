@@ -79,7 +79,7 @@ function Homepage() {
         </div>
       </section>
       <section>
-        <h4 className="heading">Our Services</h4>
+        <h4 className="heading">Special Services</h4>
         <div
           id="carouselExampleControls"
           className="carousel slide mt-4"

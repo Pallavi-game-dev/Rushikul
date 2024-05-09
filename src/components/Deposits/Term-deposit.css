@@ -1,6 +1,6 @@
 .Heading_of_service{
     position: absolute;
-    font-size: 6vw;
+    font-size: 3vw;
     bottom: 0;
     font-family: cursive;
     left: 50%;
@@ -8,3 +8,53 @@
     color: #37660f;
     width: max-content;
 }
+
+.Heading_of_service_old{
+    font-size: 4vw;
+    font-family: cursive;
+    color: #37660f;
+    width: max-content;
+    margin: 0 auto;
+}
+.details-card{
+    background-color: #fefff5;
+    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.08));
+    color: #28490c;
+    font-family: cursive;
+   
+}
+.details-card-navbar{
+    /* background-color: #86b04426; */
+    --bs-nav-link-color: #37660f;
+    font-size: x-large;
+    font-family: cursive;
+}
+ .nav-tabs .nav-link:hover{
+    color: #3f4937;
+}
+.nav-tabs .nav-link.active {
+    box-shadow: 0px 6px 13px 0px #507d0d47 inset;
+    background-color: #fefff5;
+    border-color: transparent
+}
+.tab-deatils{
+    padding: 30px;
+    box-shadow: 0px -7px 14px 4px #507d0d47 inset;
+    min-height: 48vh;
+}
+.interest-rate-table {
+    border-collapse: collapse;
+    /* width: 100%; */
+  }
+  
+  .interest-rate-table th, .interest-rate-table td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: left;
+  }
+ .tab-details{
+    display: flex;
+ }
+  .interest-rate-table tbody tr:nth-child(even) {
+    background-color: #19875417;
+  }

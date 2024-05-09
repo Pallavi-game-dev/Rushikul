@@ -13,10 +13,12 @@ a{
     margin-left: 10px;
     transition: all 0.3s ease-in-out;
 }
+
 .inlineHeader   {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+    background-color: #fefff5;
    
 }
 .leftLogo{
@@ -26,4 +28,10 @@ a{
     transition: all 0.3s ease-in-out;
     margin-bottom: 5px;
     margin-left: 32px;
+}
+.header-tab-name{
+    box-shadow: 0px 7px 6px 0px #507d0d47 inset;
+    background-color: #fefff5;
+    border-color: transparent;
+    padding: 5px 30px;
 }

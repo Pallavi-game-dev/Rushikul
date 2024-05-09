@@ -15,11 +15,14 @@ thead{
 }
 section{
     padding: 30px 30px;
+    font-family: cursive;
 }
 .heading {
     font-size: 38px;
     text-align: center;
     font-weight: bolder;
+    color: #37660f;
+    
    
 }
 .fontWeight700 {
@@ -51,4 +54,16 @@ section{
     margin: 30px;
     background-color: #f8f9fa;
     padding: 20px;
+}
+.background-page-color{
+    background-color: #fefff5;
+
+}
+.simaple-shaodow{
+    box-shadow: 0px 0px 6px 4px #507d0d47 inset;
+}
+.flexDisplay{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }

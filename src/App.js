@@ -13,7 +13,7 @@ function App() {
     <>
     <Header/>
     <Router>
-    <div>
+    <div className='background-page-color'>
       <Routes>
         <Route path="/login" element={<Login />} />
         <Route path="/home" element={<Home />} />

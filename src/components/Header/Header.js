@@ -23,13 +23,13 @@ function Header() {
           </a>
         </div>
         <div className="rightNavBar" style={{margin:'20px',fontFamily:'Reem Kufi Ink,sans-serif'}}>
-          <ul className="navbar-nav me-auto mb-2 mb-lg-0" style={{display: 'flex',flexDirection: 'row',alignItems: 'center',gap:'30px'}}>
+          <ul className="navbar-nav me-auto mb-2 mb-lg-0" style={{display: 'flex',flexDirection: 'row',alignItems: 'center',gap:'15px',fontFamily:'cursive'}}>
            { 
              
               headerJson.menu.map((element)=>{
                 return(
-                  <li className="nav-item dropdown" key={element.menu}>
-                      <a className={element.submenu.length>0?'nav-link dropdown-toggle':'nav-link'}  href="/" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <li className="nav-item dropdown header-tab-name" key={element.menu}>
+                      <a className={element.submenu.length>0?'nav-link dropdown-toggle':'nav-link'}  href="/home" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                           {element.menu}
                       </a>
                       {
