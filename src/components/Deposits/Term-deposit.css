@@ -54,6 +54,8 @@
   }
  .tab-details{
     display: flex;
+    justify-content: space-evenly;
+    align-items: center;
  }
   .interest-rate-table tbody tr:nth-child(even) {
     background-color: #19875417;

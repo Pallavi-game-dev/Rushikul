@@ -19,6 +19,8 @@ a{
     justify-content: space-between;
     align-items: flex-end;
     background-color: #fefff5;
+    height: 15vh;
+    box-shadow: 0px -20px 20px 0px #507d0d47 inset;
    
 }
 .leftLogo{
@@ -34,4 +36,12 @@ a{
     background-color: #fefff5;
     border-color: transparent;
     padding: 5px 30px;
+}
+.dropdownMenu{
+    margin: 9px 5px;
+    box-shadow: 0px 0px 6px 0px #507d0d47 inset;
+    background-color: #c2cd6100;
+    padding: 10px 30px;
+    font-weight: bolder;
+    font-family: cursive;
 }

@@ -5,7 +5,7 @@ const headerJson = require('../../Jsons/menu.json');
 function Header() {
   return (
     <>
-      <div className="inlineHeader addBoxshadow sticky">
+      <div className="inlineHeader addBoxshadow">
         <div className="leftLogo">
           <a href="/">
             <img
@@ -29,16 +29,16 @@ function Header() {
               headerJson.menu.map((element)=>{
                 return(
                   <li className="nav-item dropdown header-tab-name" key={element.menu}>
-                      <a className={element.submenu.length>0?'nav-link dropdown-toggle':'nav-link'}  href="/home" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <a className={element.submenu.length>0?'nav-link dropdown-toggle':'nav-link'}   href="/"  id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                           {element.menu}
                       </a>
                       {
                         element.submenu.length>0 && 
-                            <ul className="dropdown-menu" aria-labelledby="navbarDropdown" style={{fontSize:'14px',borderBottom:'1px solid #80808038'}}>
+                            <ul className="dropdown-menu" aria-labelledby="navbarDropdown" style={{boxShadow:'inset 1px 2px 14px 8px #507d0d47',backgroundColor:'#fefff5'}} key={element.menu+'1'}>
                             {
                               element.submenu.map(submenu => {
                                 return(
-                                <li key={submenu.name} style={{borderBottom:'1px solid #80808026',margin:'7px 5px'}}><a className="dropdown-item" href={submenu.url}>{submenu.name}</a></li>
+                                <li key={submenu.name} style={{boxShadow: '1px 2px 13px 1px #507d0d30',padding:'7px'}}><a className="dropdown-item" href={submenu.url}>{submenu.name}</a></li>
                                 
                                 )
                               })

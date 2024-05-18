@@ -1,3 +1,8 @@
+.main-page{
+    overflow-y: auto;
+    height: 87vh;
+    background-color: #fefff5;
+}
 .btn-secondary-outline{
     background: transparent;
     border: 1px solid #055160;
@@ -60,7 +65,8 @@ section{
 
 }
 .simaple-shaodow{
-    box-shadow: 0px 0px 6px 4px #507d0d47 inset;
+    /* box-shadow: 0px 0px 6px 4px #507d0d47 inset; */
+    box-shadow:3px -5px 16px 0px #507d0d47 inset;
 }
 .flexDisplay{
     display: flex;

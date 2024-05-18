@@ -12,9 +12,10 @@
     color: #37660f;
     font-family: cursive;
     box-shadow: 1px 4px 14px 4px #507d0d47 inset;
+    height: 100%;
 }
 .imgHeight{
-    height: 200px;
+    height: 80%;
 }
 /* LOAN SECTION */
 .loanItem{
