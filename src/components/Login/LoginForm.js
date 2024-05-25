@@ -1,38 +1,38 @@
-import { TextField, Button, Typography, Grid } from '@mui/material';
-import React, { useState } from 'react';
+// import { TextField, Button, Typography, Grid } from '@mui/material';
+// import React, { useState } from 'react';
 
 // import React from 'react';
 // import AccountCircle from '@mui/icons-material/AccountCircle';
 function LoginFrom(){
-    const [username, setUsername] = useState('');
-    const [password, setPassword] = useState('');
-    const [errors, setErrors] = useState({});
+    // const [username, setUsername] = useState('');
+    // const [password, setPassword] = useState('');
+    // const [errors, setErrors] = useState({});
    
-    const handleSubmit = (e) => {
-      e.preventDefault();
+    // const handleSubmit = (e) => {
+    //   e.preventDefault();
   
       // Validation
-      const errors = {};
-      if (!username.trim()) {
-        errors.username = 'Username is required';
-      }
-      if (!password.trim()) {
-        errors.password = 'Password is required';
-      }
+      // const errors = {};
+      // if (!username.trim()) {
+      //   errors.username = 'Username is required';
+      // }
+      // if (!password.trim()) {
+      //   errors.password = 'Password is required';
+      // }
   
-      if (Object.keys(errors).length === 0) {
+      // if (Object.keys(errors).length === 0) {
         // No errors, perform login or submit form
-        console.log('Username:', username);
-        console.log('Password:', password);
-      } else {
+        // console.log('Username:', username);
+        // console.log('Password:', password);
+      // } else {
         // Update errors state
-        setErrors(errors);
-      }
-    };
+        // setErrors(errors);
+      // }
+    // };
     return(
         
         <>
-         <Grid container justifyContent="center">
+         {/* <Grid container justifyContent="center">
             <Grid item xs={12} sm={6} md={4}>
             <Typography variant="h5" align="center" gutterBottom>
             Login
@@ -70,7 +70,7 @@ function LoginFrom(){
                 </Grid>
             </form>
       </Grid>
-    </Grid>
+    </Grid> */}
        
             
         </>

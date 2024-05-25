@@ -1,6 +1,6 @@
 import React from "react";
 import './chairman_message.css'
-function Chairman_message(){
+function Chairmanmessage(){
  
     return(
         <>
@@ -24,4 +24,4 @@ function Chairman_message(){
     )
 }
 
-export default Chairman_message
+export default Chairmanmessage

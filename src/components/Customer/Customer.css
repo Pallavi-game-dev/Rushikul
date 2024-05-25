@@ -3,3 +3,29 @@
 .card-bg{
     background: #1e738447;
 }
+.pageheaderconatiner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+.customerpage-maincon{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.form-control{
+    background-color:#f6f7f2 !important;
+    border: 1px solid #6b9f0b69!important;
+    font-size:14px
+}
+.form-label{
+    margin-top: 0.5rem !important;
+    margin-bottom: 0rem!important;
+    font-size: 12px;
+}
+.form-select{
+    background-color:#f6f7f2 !important;
+    border: 1px solid #6b9f0b69!important;
+    font-size:14px
+}

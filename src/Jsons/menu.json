@@ -3,11 +3,18 @@
     "menu": [
         {
             "menu": "Home",
+            "menuUrl":"/home",
             "submenu": []
             
         },
         {
+            "menu": "Customer",
+            "menuUrl":"/customer",
+            "submenu": []
+        },
+        {
             "menu": "About Us",
+            "menuUrl":"",
             "submenu": [
                 {"name": "Chairman Message", "url": "/chairman-message"},
                 {"name": "Board of Director", "url": "/board-of-director"},
@@ -19,6 +26,7 @@
         },
         {
             "menu": "Deposits",
+            "menuUrl":"",
             "submenu": [
                 {"name": "Rushikul Sanjivani Deposit", "url": "/rushikul-sanjivani-deposit"},
                 {"name": "Savings", "url": "/savings"},
@@ -35,6 +43,7 @@
         },
         {
             "menu": "Loans",
+            "menuUrl":"",
             "submenu": [
                 {"name": "Personal Loan", "url": "/personal-loan"},
                 {"name": "Business Loan", "url": "/business-loan"},
@@ -49,6 +58,7 @@
         },
         {
             "menu": "Contact",
+            "menuUrl":"",
             "submenu": [
                 {"name": "Head Office", "url": "/head-office"},
                 {"name": "Branches", "url": "/branches"}

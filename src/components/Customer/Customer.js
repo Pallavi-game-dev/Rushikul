@@ -1,35 +1,72 @@
-import React from "react";
-import './Customer.css';
-const cardJson = require('../../Jsons/cardJson.json');
+import React, { useEffect, useCallback,
+  useRef,
+  useState,
+  } from 'react';
+import './Customer.css'
+
+import { getAllCustomer } from '../../API/endpionts';
+import { AgGridReact } from 'ag-grid-react'; // React Data Grid Component
+import "ag-grid-community/styles/ag-grid.css"; // Mandatory CSS required by the grid
+import "ag-grid-community/styles/ag-theme-quartz.css"; // Optional Theme applied to the grid
+import AddCustomer from './AddCustomer';
 function Customer() {
-    const cardList = cardJson.customer_section;
+  const gridRef = useRef(null);
+  const [rowData,setcustomer] = useState([]);
+
+  const [toggleAddCustomerForm,setAddCustomerForm] = useState(false);
+
+  const [colDefs] = useState([
+    { field: "fname", headerName: 'First Name',},
+    { field: "lname", headerName: 'Last Name'},
+    { field: "email", headerName: 'Email Id'},
+    { field: "mobile", headerName: 'Mobile Number'},
+    { field: "addharnumber", headerName: 'Aadhar Number'},
+    { field: "pancard",headerName: 'Pancard Number' },
+    { field: "branch_id", headerName: 'Branch Id'},
+  ]);
+
+  useEffect(()=>{
+    getAllCustomer().then(res=>{
+      setcustomer(res);
+      
+    });
+  
+  },[]);
+  const setAddCustomerFormClosed =(flag)=>{
+    setAddCustomerForm(flag)
+  }
+  const onGridReady = useCallback((params) => {
+    if (gridRef.current) {
+      gridRef.current.api.sizeColumnsToFit();
+    }
+  }, [gridRef]);
+
+
   return (
     <>
-    <div className="container my-3">
-        <h2>Hello</h2>
-        <div className="row">
-            {
-                cardList.map((element)=>{
-                return  <div className="col-md-4 my-2" key={element.heading}>
-                    <div className="card card-bg shadow-sm">
-                    {/* <img src="..." className="card-img-top" alt="..."/> */}
-                    <div className="card-body">
-                        <h5 className="card-title">{element.heading}</h5>
-                        <span className="card-text ">{element.balance}</span>
-                        <p className="card-text ">{element.description}</p>
-                        <a href="/" className="btn btn-secondary">see more </a>
-                    </div>
-                </div>
-                </div>
-
-                })
-            }
-        
+      <section className='customerpage-maincon'>
+        <div className='pageheaderconatiner'>
+            <h2>Customer List</h2>
+            <button className='btn-secondary' onClick={()=>setAddCustomerForm(true)}>+ Add Customer</button>
+        </div>  
+      <div
+          className="ag-theme-quartz" // applying the grid theme
+          style={{ height:'73vh'}} // the grid will fill the size of the parent container
+        >
+          <AgGridReact style={{ width: '100%', height: '100%' }}
+              ref={gridRef}
+              onGridReady={onGridReady}
+              rowData={rowData}
+              columnDefs={colDefs}
+          />
         </div>
-    </div>
-  
-    
+        </section>
+        <AddCustomer open={toggleAddCustomerForm} close={setAddCustomerFormClosed}/>
+   
+     
     </>
-  );
+  )
 }
-export default Customer;
+
+export default Customer
+

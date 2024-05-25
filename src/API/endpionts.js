@@ -1,11 +1,12 @@
-import React from 'react'
+import axios from "axios";
+const baseUrl = 'http://localhost:5000/api/'
 
-function endpionts() {
-  return (
-    <>
-      
-    </>
-  )
+
+export async function getAllCustomer() {
+  const {data}= await axios.get(baseUrl + 'customer/getcustomer');
+    return data
 }
-
-export default endpionts
+export async function getBranchList() {
+  const {data}= await axios.get(baseUrl + 'branch/getbranchList');
+    return data
+}

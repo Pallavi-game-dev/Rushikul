@@ -1,11 +1,12 @@
 import * as React from 'react';
-import Button from '@mui/material/Button';
+
 import { styled } from '@mui/material/styles';
 import Dialog from '@mui/material/Dialog';
 import DialogTitle from '@mui/material/DialogTitle';
 import DialogContent from '@mui/material/DialogContent';
 import DialogActions from '@mui/material/DialogActions';
-import { useState } from 'react';
+import { useState,useEffect } from 'react';
+import { getBranchList } from '../../API/endpionts';
 
 
 const BootstrapDialog = styled(Dialog)(({ theme }) => ({
@@ -17,17 +18,20 @@ const BootstrapDialog = styled(Dialog)(({ theme }) => ({
   },
 }));
 function AddCustomer(props) {
-console.log("props",props);
+// console.log("props",props);
   const [firstname, setFirstname] = useState('');
   const [lastname, setLastname] = useState('');
   const [mobile, setmobile] = useState('');
   const [address, setAddress] = useState('');
-  const [state, setState] = useState('');
-  const [city, setCity] = useState('');
+  // const [state, setState] = useState('');
+  // const [city, setCity] = useState('');
   const [errors, setError] = useState({});
-
+  const [branch, setbranch] = useState({});
+  const [branchList, setbranchList] = useState([]);
+    
     const handleClose = () => {
-      props.closenDailog(false);
+      props.close(false);
+      console.log(props.open);
     };
     const onSubmit=()=>{
        // Validation
@@ -36,8 +40,7 @@ console.log("props",props);
           lastname: "",
           mobile: "",
           address: "",
-          state: "",
-          city: "",
+          branch: "",
       }
         if (!firstname.trim()) {
           errors.firstname = 'First name is required';
@@ -51,30 +54,40 @@ console.log("props",props);
         if (!address.trim()) {
           errors.address = 'Address is required';
         }
-        if (!state.trim()) {
-          errors.state = 'State is required';
+        if (!branch.trim()) {
+          errors.branch = 'State is required';
         }
-        if (!city.trim()) {
-          errors.city = 'City is required';
-        }
+        // if (!city.trim()) {
+        //   errors.city = 'City is required';
+        // }
+       
         if (Object.keys(errors).length === 0) {
           console.log("ERRRRRRRRRRRRRR");
         } else {
           // Update errors state
           setError(errors);
         }
+        // if(firstname!=''&&lastname! ='')
+
       
     }
     const errorMsg ={
       fontSize:'12px',
       color:'red'
     }
+    useEffect(()=>{
+      getBranchList().then(res=>{
+        setbranchList(res)
+      });
+    
+    },[]);
   return (
       <>
         <BootstrapDialog
           onClose={handleClose}
           aria-labelledby="customized-dialog-title"
           open={props.open}
+          className='my-dialog'
         >
           <DialogTitle sx={{ m: 0, p: 2 }} id="customized-dialog-title" className='header'>
             Add Customer
@@ -95,24 +108,26 @@ console.log("props",props);
                 </div>
                 <div className="col-md-12">
                   <label htmlFor="validationCustom02" className="form-label">Mobile Number</label>
-                  <input type="text" className="form-control" id="validationCustom02" value={mobile}  onChange={(e) => setmobile(e.target.value)} required/>
+                  <input type="text" className="form-control" id="validationCustom02" value={mobile}  onChange={(e) => {setmobile(e.target.value);errors.mobile = ''}} required/>
                   <div style={errorMsg}>{errors.mobile}</div>
                 </div>
                 <div className="col-md-12">
                   <label htmlFor="validationCustom02" className="form-label">Address</label>
-                  <input type="text" className="form-control" id="validationCustom02" value={address}  onChange={(e) => setAddress(e.target.value)} required/>
+                  <input type="text" className="form-control" id="validationCustom02" value={address}  onChange={(e) => {setAddress(e.target.value);errors.address=''}} required/>
                   <div style={errorMsg}>{errors.address}</div>
                 </div>
-                <div className="col-md-6">
-                  <label htmlFor="validationCustom03" className="form-label">City</label>
-                  <input type="text" className="form-control" id="validationCustom03" value={city}  onChange={(e) => setCity(e.target.value)} required/>
-                  <div style={errorMsg}>{errors.city}</div>
-                </div>
-                <div className="col-md-6">
-                  <label htmlFor="validationCustom04" className="form-label">State</label>
-                  <select className="form-select" id="validationCustom04" required value={state}  onChange={(e) => setState(e.target.value)}>
-                    <option defaultValue disabled >Choose...</option>
-                    <option>...</option>
+                <div className="col-md-12">
+                  <label htmlFor="validationCustom04" className="form-label">Branch</label>
+                  <select className="form-select" id="validationCustom04" required value={branch}  onChange={(e) => {setbranch(e.target.value);errors.state=''}}>
+                  <option defaultValue disabled>Choose...</option>
+                    {
+                      branchList.map(branch=>{
+                        return(
+                          <option>{branch?.branch_name}</option>
+                        )
+                      })
+
+                     }
                   </select>
                   <div style={errorMsg}>{errors.state}</div>
                 </div>
