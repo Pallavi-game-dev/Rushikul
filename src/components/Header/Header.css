@@ -15,11 +15,13 @@ a{
 }
 
 .inlineHeader   {
-    display: flex;
+    /* display: flex;
     justify-content: space-between;
     align-items: flex-end;
     background-color: #fefff5;
     height: 15vh;
+    box-shadow: 0px -20px 20px 0px #507d0d47 inset; */
+    background-color: #fefff5;
     box-shadow: 0px -20px 20px 0px #507d0d47 inset;
    
 }

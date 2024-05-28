@@ -1,6 +1,4 @@
-{
-    "name": "Rushikul",
-    "menu": [
+[
         {
             "menu": "Home",
             "menuUrl":"/home",
@@ -65,4 +63,3 @@
             ]
         }
     ]
-}

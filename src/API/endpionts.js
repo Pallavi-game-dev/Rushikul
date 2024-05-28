@@ -6,6 +6,10 @@ export async function getAllCustomer() {
   const {data}= await axios.get(baseUrl + 'customer/getcustomer');
     return data
 }
+export async function createCustomer(body) {
+  const {data}= await axios.post(baseUrl + 'customer/createcustomer',body);
+    return data
+}
 export async function getBranchList() {
   const {data}= await axios.get(baseUrl + 'branch/getbranchList');
     return data

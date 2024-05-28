@@ -61,7 +61,7 @@ function Customer() {
           />
         </div>
         </section>
-        <AddCustomer open={toggleAddCustomerForm} close={setAddCustomerFormClosed}/>
+        <AddCustomer open={toggleAddCustomerForm} close={setAddCustomerFormClosed} setcustomer={setcustomer}/>
    
      
     </>
