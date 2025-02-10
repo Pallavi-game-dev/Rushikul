@@ -17,6 +17,34 @@
 .imgHeight{
     height: 80%;
 }
+.carousel-inner{
+    position: relative;
+    width: 90%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.carouselExampleControlss{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.carousel-control-nexts,.carousel-control-prevs{
+    position: relative;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* width: 6%; */
+    padding: 0;
+    color: #41464b;
+    text-align: center;
+    background: 0 0;
+    border: 0;
+    opacity: 1;
+    transition: opacity .15s ease;
+}
 /* LOAN SECTION */
 .loanItem{
     display: flex;

@@ -1,0 +1,79 @@
+{
+    "Titile": "Term Deposit",
+    "Description": "Terms deposits are an extremely safe investment and are therefore very appealing to conservative, low-risk investors. In Monthly Income Scheme Deposit, we all require certain amount for our day to day expenses and for that by investing certain lump sum amount for specific period of time.",
+    "tab1": {
+        "tab_name":"Information",
+        "title": "Depositing amount for fixed period",
+        "src":"information.jpg",
+        "points": [
+            {
+                "description": "Period of deposit is minimum 1 Month to 36 Months"
+            },
+            {
+                "description": "Repayment with interest on maturity date"
+            }
+        ]
+    },
+    "tab2": {
+        "tab_name":"% Intrest Rate",
+        "title": "",
+        "src":"intrest_rate.jpg",
+        "table_header_col1": "Days/month",
+        "table_header_col2": "Interest Rate (%)",
+           
+        "points":[
+        {
+            "duration": "46 days to 90 days",
+            "rate": "5.00%"
+        },
+        {
+            "duration": "91 days to 180 days",
+            "rate": "6.00%"
+        },
+        {
+            "duration": "46 days to 90 days",
+            "rate": "7.00%"
+        },
+        {
+            "duration": "181 days to 270 days",
+            "rate": "8.00%"
+        },
+        {
+            "duration": "12 months complete",
+            "rate": "8.75%"
+        },
+        {
+            "duration": "12 months complete for senior citizen / handicapped / widow /ex- army person",
+            "rate": "9.25%"
+        },
+        {
+            "duration": "18 months complete",
+            "rate": "9.00%"
+        },
+        {
+            "duration": "18 months complete for senior citizen / handicapped / widow / ex- army person",
+            "rate": "9.50%"
+        },
+        {
+            "duration": "18 months 1 day to 60 months",
+            "rate": "8.00%"
+        }
+    ]
+},
+    "tab3":{
+        "tab_name":"Information",
+        "title": "Documents Required",
+        "src":"documents.jpg",
+        "points": [
+            {
+                "document": "Photograph"
+            },
+            {
+                "document": "Pan card"
+            },
+            {
+                "document": "Aadhar Card"
+            }
+        ]
+    } 
+}

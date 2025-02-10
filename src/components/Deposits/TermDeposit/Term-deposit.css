@@ -33,15 +33,11 @@
     color: #3f4937;
 }
 .nav-tabs .nav-link.active {
-    box-shadow: 0px 6px 13px 0px #507d0d47 inset;
-    background-color: #fefff5;
-    border-color: transparent
+       /* box-shadow: 0px 16px 20px 0px #507d0d47; */
+       background-color: #fefff5;
+       /* border-color: transparent; */
 }
-.tab-deatils{
-    padding: 30px;
-    box-shadow: 0px -7px 14px 4px #507d0d47 inset;
-    min-height: 48vh;
-}
+
 .interest-rate-table {
     border-collapse: collapse;
     /* width: 100%; */
@@ -54,9 +50,15 @@
   }
  .tab-details{
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: flex-start;
  }
   .interest-rate-table tbody tr:nth-child(even) {
     background-color: #19875417;
+  }
+  .documents-img{
+    width: 33vw;
+    height: 33vh;
   }

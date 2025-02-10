@@ -23,7 +23,7 @@ function Homepage() {
         <h4 className="heading">Our Services</h4>
         <div
           id="carouselExampleControls"
-          className="carousel slide mt-4"
+          className="carousel slide mt-4 carouselExampleControlss"
           data-ride="carousel"
         >
           <div className="carousel-inner">

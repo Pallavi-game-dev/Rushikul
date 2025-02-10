@@ -5,10 +5,10 @@ import Home from './components/Home/Home'
 import { BrowserRouter as Router, Route,Routes } from 'react-router-dom';
 import Customer from './components/Customer/Customer';
 import Header from './components/Header/Header';
-import TermDeposit from './components/Deposits/Term-deposit';
-import Chairman_message from './components/About_Us/Chairman_message/chairman_message';
+import TermDeposit from './components/Deposits/TermDeposit/Term-deposit';
+import ChairmanMessage from './components/About_Us/Chairman_message/chairman_message';
 // import AddCustomer from './components/Customer/AddCustomer';
-
+const InfoJson =require('./Jsons/term-deposit.json')
 function App() {
   return (
     <>
@@ -19,8 +19,8 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/home" element={<Home />} />
         <Route path="/customer" element={<Customer />} />
-        <Route path="/term-deposit" element={<TermDeposit />} />
-        <Route path="/chairman-message" element={<Chairman_message/>} />
+        <Route path="/term-deposit" element={<TermDeposit data={InfoJson} />} />
+        <Route path="/chairman-message" element={<ChairmanMessage/>} />
         <Route path="/" element={<Home />} />
       </Routes>
     </div>

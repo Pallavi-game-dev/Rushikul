@@ -29,7 +29,7 @@ function Header() {
               headerJson.menu.map((element)=>{
                 return(
                   <li className="nav-item dropdown header-tab-name" key={element.menu}>
-                      <a className={element.submenu.length>0?'nav-link dropdown-toggle':'nav-link'}   href="/"  id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <a className={element.submenu.length>0?'nav-link dropdown-toggle':'nav-link'} key={element.menu}  href="/"  id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                           {element.menu}
                       </a>
                       {
